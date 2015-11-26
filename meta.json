@@ -36,16 +36,24 @@
     //Required. Outputs the module emits.
     "outputs": [
         {
-            "id": "user",
-            "title":"User Info"
+            "id": "screen_name",
+            "title":"screen_name"
         },
         {
-            "id": "entities",
-            "title":"Entities Info"
+            "id": "url",
+            "title":"url"
+        },
+        {
+          "id": "urls",
+          "title":"urls"
         },
         {
           "id": "text",
-          "title":"Text"
+          "title":"text"
+        },
+        {
+          "id": "hashtags",
+          "title":"hashtags"
         }
     ],
     /* Required.A display name for the module */

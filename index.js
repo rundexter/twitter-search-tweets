@@ -8,13 +8,13 @@ var mapAuthOptionsEnv = {
     'twitter_access_token_secret': 'access_token_secret'
 };
 
-var pickResult = [
-    'user.screen_name',
-    'user.url',
-    'text',
-    'entities.urls',
-    'entities.hashtags'
-];
+var pickResult = {
+    'user.screen_name': 'screen_name',
+    'user.url': 'url',
+    'text': 'text',
+    'entities.urls': 'urls',
+    'entities.hashtags': 'hashtags'
+};
 
 module.exports = {
     /**
@@ -43,11 +43,11 @@ module.exports = {
         _.map(outputs, function (output) {
             var tmpResult = {};
 
-            _.map(pickResult, function (val) {
+            _.map(_.keys(pickResult), function (val) {
 
                 if (_.has(output, val)) {
 
-                    _.set(tmpResult, val, _.get(output, val));
+                    _.set(tmpResult, pickResult[val], _.get(output, val));
                 }
             });
 
