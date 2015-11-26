@@ -4,23 +4,50 @@
 {
     //Required. Inputs the module expects.
     "inputs": [
-        //e.g.
-        /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "q",
+            "title":"Query"
+        },
+        {
+          "id": "geocode",
+          "title":"geocode"
+        },
+        {
+          "id": "result_type",
+          "title":"result_type"
+        },
+        {
+          "id": "count",
+          "title":"count"
+        },
+        {
+          "id": "until",
+          "title":"until"
+        },
+        {
+          "id": "since_id",
+          "title":"since_id"
+        },
+        {
+          "id": "max_id",
+          "title":"max_id"
         }
-        */
     ],
     //Required. Outputs the module emits.
     "outputs": [
-      //e.g.
-      /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "user",
+            "title":"User Info"
+        },
+        {
+            "id": "entities",
+            "title":"Entities Info"
+        },
+        {
+          "id": "text",
+          "title":"Text"
         }
-      */
     ],
-    "title": "Twitter Search Tweets" /* Required.A display name for the module */
+    /* Required.A display name for the module */
+    "title": "Twitter Search Tweets"
 }
