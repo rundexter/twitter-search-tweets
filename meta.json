@@ -56,6 +56,9 @@
           "title":"hashtags"
         }
     ],
+    "providers": [{
+        "name": "twitter"
+    }],
     "icon": "twitter",
     /* Required.A display name for the module */
     "title": "Twitter Search Tweets"
