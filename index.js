@@ -7,7 +7,8 @@ var pickResult = {
     'text': 'text',
     'entities.urls': 'urls',
     'entities.hashtags': 'hashtags',
-    'created_at': 'created'
+    'created_at': 'created',
+    'id_str': 'id'
 };
 
 module.exports = {
