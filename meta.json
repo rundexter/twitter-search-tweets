@@ -54,6 +54,10 @@
         {
           "id": "hashtags",
           "title":"hashtags"
+        },
+        {
+          "id": "created",
+          "title": "created"
         }
     ],
     "providers": [{
